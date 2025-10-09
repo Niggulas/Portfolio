@@ -21,6 +21,8 @@
         </nav>
         </header>
 		
+		<!-- Implement Symbols in Lightbox:  -->
+
 		<div class="container">
 			<div class="grid">
         	    <a href="#img1">
@@ -35,14 +37,23 @@
         	</div>
 
         	<!-- Lightbox Elemente -->
-        	<div class="lightbox" id="img1">
-        	    <img src="pictures/bild1.jpg" alt="Beispielbild 1">
-        	</div>
+			<div class="lightbox" id="img1">
+				<a href="#img3" class="prev">‹</a>
+				<img src="pictures/bild1.jpg" alt="Beispielbild 1">
+				<a href="#img2" class="next">›</a>
+				<a href="#" class="close">✕</a>
+			</div>
         	<div class="lightbox" id="img2">
+				<a href="#img1" class="prev">‹</a>
         	    <img src="pictures/bild2.jpg" alt="Beispielbild 2">
+				<a href="#img3" class="next">›</a>
+				<a href="#" class="close">✕</a>
         	</div>
         	<div class="lightbox" id="img3">
+				<a href="#img2" class="prev">‹</a>
         	    <img src="pictures/bild3.jpg" alt="Beispielbild 3">
+				<a href="#img1" class="next">›</a>
+				<a href="#" class="close">✕</a>
         	</div>
 		</div>
 
