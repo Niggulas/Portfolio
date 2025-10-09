@@ -1,0 +1,28 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+# If you would like to report a security issue you 
+# can report it to me via (PGP encrypted) mail
+Contact: mailto:contact@nikolas-huber.com
+Encryption: https://nikolas-huber.com/pgp/contact.asc
+Encryption: openpgp4fpr:22D426AE86AA9CA58363FCCD0346727AD1D609B4
+Preferred-Languages: de, en
+Canonical: https://nikolas-huber.com/.well-known/security.txt
+Expires: 2027-01-01T00:00:00.000Z
+-----BEGIN PGP SIGNATURE-----
+
+iQJOBAEBCAA4FiEEItQmroaqnKWDY/zNA0ZyetHWCbQFAmjn2goaHGNvbnRhY3RA
+bmlrb2xhcy1odWJlci5jb20ACgkQA0ZyetHWCbQbNA/+MAu0FssfkzjuVTpCWdYF
+nW+h96LGCZUBuXzLXdJWf1QzeGbduG7DLqNekbxYkjB7SVHkeOzxOOFZ05yY3r/4
+5xcVUIJCS84AHp9WKdxhR/AEVDGcHzcs/FmzangG8mSSB3n59yC/+EZjt3n/vg+e
+6R+v3f3wRGhmcucwniy2/auZaHRN408dFsF3oqsj7pO5D2v+6j2MhJlp+k4R/0kL
+7An7mkSjkhfHYg0AGqDN4RUnUvA3NDJaQdPR2y6vZcha5keLyvuQcYV6XJpJRNHp
+GUCSXv6G8qMq6tAX5WXNE7SzNbwMcoviUS4E62+EWU8LdQvKzx5cZRvJn4Rs5nD7
+KBt+S1jB/6WgBp5jCb4VclmMgE9Ps7sZRzvV77w6XjBspvgk41/lcdCuy2b7UFhQ
+Bw1WhmeXjYF0Oo7CCMvz3/hIe0TuajizhEHuxjKiFU96Znvl6G43OhqNx7U16CLJ
+FRnJsCxLCRuZYdS8v/bMovLjfp9iWVy4dd6gvB6czUcFd2TxXiWmChe06WRBIR+9
+jlMvbreBWNOqUAQonAb6hkqu+fn/y/rZo34JBNMNHPA85OOoatmFXQsUxWvSMkWJ
+EJ17T73Nb+CjwYE9nHX5VLFoyqjZdj/kmzT1loWVyqGvlrDGzkLRjZUuDu4Cv8z3
+gXCAmgTCJY13mrFd8/N6c50=
+=8QSs
+-----END PGP SIGNATURE-----
