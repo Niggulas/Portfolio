@@ -9,7 +9,34 @@
 		<meta name="description" content="Portfolio of Nikolas Huber."/>
         
 		<link rel="stylesheet" href="styles.css"/>
-        
+
+		<script>
+			document.addEventListener('keydown', function (e) {
+    			const currentHash = window.location.hash;
+
+    			// Wenn kein Bild offen ist, nichts tun
+    			if (!currentHash.startsWith('#img')) return;
+
+    			// Alle Bild-IDs in der richtigen Reihenfolge
+    			const images = ['#img1', '#img2', '#img3'];
+
+    			let currentIndex = images.indexOf(currentHash);
+
+    			if (e.key === 'Escape') {
+        			// ESC schließt die Lightbox
+        			window.location.hash = '';
+    			} else if (e.key === 'ArrowRight') {
+        			// Nächstes Bild
+        			let nextIndex = (currentIndex + 1) % images.length;
+        			window.location.hash = images[nextIndex];
+    			} else if (e.key === 'ArrowLeft') {
+        			// Vorheriges Bild
+        			let prevIndex = (currentIndex - 1 + images.length) % images.length;
+        			window.location.hash = images[prevIndex];
+    			}
+			});
+		</script>
+
     </head>
     <body>
         <header>
@@ -38,18 +65,21 @@
 
         	<!-- Lightbox Elemente -->
 			<div class="lightbox" id="img1">
+				<a href="#" class="lightbox-bg"></a>
 				<a href="#img3" class="prev">‹</a>
 				<img src="pictures/bild1.jpg" alt="Beispielbild 1">
 				<a href="#img2" class="next">›</a>
 				<a href="#" class="close">✕</a>
 			</div>
         	<div class="lightbox" id="img2">
+				<a href="#" class="lightbox-bg"></a>
 				<a href="#img1" class="prev">‹</a>
         	    <img src="pictures/bild2.jpg" alt="Beispielbild 2">
 				<a href="#img3" class="next">›</a>
 				<a href="#" class="close">✕</a>
         	</div>
         	<div class="lightbox" id="img3">
+				<a href="#" class="lightbox-bg"></a>
 				<a href="#img2" class="prev">‹</a>
         	    <img src="pictures/bild3.jpg" alt="Beispielbild 3">
 				<a href="#img1" class="next">›</a>
