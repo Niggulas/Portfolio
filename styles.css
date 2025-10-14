@@ -25,18 +25,11 @@ header h1 {
 a {
 	color: #0077cc;
 	text-decoration: none;
-	white-space: nowrap;
+	border-bottom: 0px;
 }
 
 nav {
-	display: flex;
-	align-items: center;
-    justify-content: center;
-    max-width: min-content;
-	/* evtl max-width: 1000px; wenn es zu breit wird */
 	margin: 20px 0;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 nav a {
@@ -44,15 +37,14 @@ nav a {
 	margin: 0 15px;
 	font-size: 1.2em;
 	position: relative;
-	min-width: min-content;
-	max-width: 300px;
-	width: 300px;
+	min-width: 300px;
 	
 }
 
 nav a.selected {
 	background: #e4e4e4;
 	border-radius: 10px;
+	width: 0;
 }
 
 
@@ -213,106 +205,4 @@ td.right {
 	top: 50%;
 	right: 50px;
 	transform: translateY(-50%);
-}
-
-
-
-
-
-
-
-
-.pgp-container {
-    display: flex;
-    justify-content: center;
-	align-items: center;
-    max-width: 70%;
-    margin-left: auto;
-	margin-right: auto;
-}
-
-.pgp-left {
-    padding-right: 50px;
-}
-
-.pgp-right {
-    padding-left: 50px;
-	border-left: 1px solid #444444;
-}
-
-.about-container {
-    display: flex;
-    justify-content: center;
-	align-items: center;
-    max-width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-
-}
-
-.about-left {
-    padding-right: 50px;
-}
-
-.about-right {
-    padding-left: 50px;
-	border-left: 1px solid #444444;
-}
-
-
-
-@media (max-width: 850px) {
-    .about-container {
-        flex-direction: column;
-    }
-
-    .about-left {
-        padding-right: 30px;
-		padding-left: 30px;
-		padding-bottom: 20px;
-		border-bottom: 1px solid #444444;
-    }
-
-    .about-right {
-        padding-left: 0;
-		padding-top: 20px;
-        border-left: none;
-		
-    }
-}
-
-
-@media (max-width: 750px) {
-	nav {
-		flex-direction: column;
-	}
-	nav a {
-		max-width: 200px;
-		margin-bottom: 20px;
-	}
-}
-
-
-@media (max-width: 600px) {
-    .pgp-container {
-        flex-direction: column;
-    }
-
-    .pgp-left {
-        padding-right: 0;
-		padding-bottom: 20px;
-    }
-
-    .pgp-right {
-        padding-left: 0;
-		padding-top: 20px;
-        border-left: none;
-		border-top: 1px solid #444444;
-    }
-}
-
-@media (max-width: 430px) {
-	nav a {
-		max-width: 70%;
-	}
 }
