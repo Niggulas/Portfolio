@@ -42,15 +42,18 @@
         <header>
             <h1>Nikolas Huber</h1>
 			<nav>
-            <a href="photography.html", class="selected">My Photography</a>
-            <a href="index.html", class="option">About Me</a>
-            <a href="contact.html", class="option">Contact</a>
-        </nav>
+            	<a href="photography.html", class="selected">My Photography</a>
+				<a href="index.html", class="option">About Me</a>
+            	<a href="contact.html", class="option">Contact</a>
+        	</nav>
         </header>
 		
 		<!-- Implement Symbols in Lightbox:  -->
 
 		<div class="container">
+
+			<!-- Start Grid -->
+
 			<div class="grid">
         	    <a href="#img1">
         	        <img id="bild1" src="pictures/bild1.jpg" alt="Beispielbild 1">
@@ -61,9 +64,16 @@
         	    <a href="#img3">
         	        <img id="bild3" src="pictures/bild3.jpg" alt="Beispielbild 3">
         	    </a>
+				<a href="#img4">
+        	        <img id="bild4" src="pictures/bild4.jpg" alt="Beispielbild 4">
+        	    </a>
         	</div>
 
-        	<!-- Lightbox Elemente -->
+			<!-- End Grid -->
+
+
+        	<!-- Start Lightbox -->
+
 			<div class="lightbox" id="img1">
 				<a href="#" class="lightbox-bg"></a>
 				<a href="#img3" class="prev">‹</a>
@@ -82,9 +92,19 @@
 				<a href="#" class="lightbox-bg"></a>
 				<a href="#img2" class="prev">‹</a>
         	    <img src="pictures/bild3.jpg" alt="Beispielbild 3">
+				<a href="#img4" class="next">›</a>
+				<a href="#" class="close">✕</a>
+        	</div>
+			<div class="lightbox" id="img4">
+				<a href="#" class="lightbox-bg"></a>
+				<a href="#img3" class="prev">‹</a>
+        	    <img src="pictures/bild4.jpg" alt="Beispielbild 4">
 				<a href="#img1" class="next">›</a>
 				<a href="#" class="close">✕</a>
         	</div>
+
+			<!-- End Lightbox -->
+
 		</div>
 
 	</body>
