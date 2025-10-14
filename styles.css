@@ -65,6 +65,18 @@ nav a.option::after {
 	transition: width 0.3s;
 	position: absolute;
 	bottom: -5px;
+}
+
+#left::after {
+	right: 0;
+}
+
+#center::after {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#right::after {
 	left: 0;
 }
 
