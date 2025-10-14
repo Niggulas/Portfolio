@@ -211,20 +211,17 @@ td.right {
 
 /* Positionierung */
 .lightbox a.close {
-	top: 40px;
-	right: 40px;
+	top: 93%;
 }
 
 .lightbox a.prev {
-	top: 50%;
-	left: 50px;
-	transform: translateY(-50%);
+	top: 93%;
+	left: 40%;
 }
 
 .lightbox a.next {
-	top: 50%;
-	right: 50px;
-	transform: translateY(-50%);
+	top: 93%;
+	right: 40%;
 }
 
 
