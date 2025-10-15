@@ -18,8 +18,10 @@ header {
 }
 
 header h1 {
-	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	font-size: 2.5em;
+	white-space: nowrap;
 }
 
 a {
@@ -51,7 +53,7 @@ nav a {
 }
 
 nav a.selected {
-	background: #e4e4e4;
+	background: #e9e9e9;
 	border-radius: 10px;
 }
 
@@ -84,6 +86,40 @@ nav a.option:hover::after {
 	width: 100%;
 }
 
+
+
+
+
+/* Basislayout */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Hamburger-Menü Button (nur bei kleiner Breite sichtbar) */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+/* Ab 1000px oder kleiner: Menü kollabiert */
+@media (max-width: 1000px) {
+  
+}
+
+
+
+
+
+
+
 .container {
 	padding: 20px;
 	max-width: 1200px;
@@ -109,6 +145,13 @@ nav a.option:hover::after {
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+
+
+
+
+
+/* Lightbox */
+
 .lightbox {
 	display: none;
 	position: fixed;
@@ -131,44 +174,6 @@ nav a.option:hover::after {
 .lightbox:target {
 	display: flex;
 }
-
-button {
-	background: #0077cc;
-	color: #fff;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-	font-size: 1em;
-	transition: background 0.3s, transform 0.3s;
-}
-
-button:hover {
-	background: #005fa3;
-	transform: scale(1.05);
-}
-
-button:active {
-	transform: scale(0.95);
-}
-
-table {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 70%;
-}
-
-td.left {
-	padding-right: 50px;
-	border-right: 1px solid #444444;
-}
-td.right {
-	padding-left: 50px;
-}
-
-
-
-
 
 .lightbox-bg {
 	position: absolute;
@@ -209,7 +214,6 @@ td.right {
 	background: rgba(200, 200, 200, 0.9);
 }
 
-/* Positionierung */
 .lightbox a.close {
 	top: 93%;
 }
@@ -226,10 +230,7 @@ td.right {
 
 
 
-
-
-
-
+/* Flex elements of about section and pgp key */
 
 .pgp-container {
     display: flex;
@@ -270,6 +271,37 @@ td.right {
 
 
 
+
+button {
+	background: #0077cc;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+	background: #005fa3;
+	transform: scale(1.05);
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+/* Screen size adaptation */
+
 @media (max-width: 850px) {
     .about-container {
         flex-direction: column;
@@ -298,6 +330,29 @@ td.right {
 	nav a {
 		max-width: 200px;
 		margin-bottom: 20px;
+	}
+	.main-nav {
+		display: none;
+		flex-direction: column;
+		background-color: #f4f4f4;
+		padding: 1rem;
+	}
+	.nav-toggle-label {
+		display: block;
+	}
+	
+	/* Wenn Checkbox gecheckt ist → Menü zeigen */
+  	.nav-toggle:checked + .nav-toggle-label + .main-nav {
+    	display: flex;
+	}
+	#left::after {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	#right::after {
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
 
