@@ -8,7 +8,8 @@
         
 		<meta name="description" content="Portfolio of Nikolas Huber."/>
         
-		<link rel="stylesheet" href="styles.css"/>
+		<link rel="stylesheet" href="css/styles.css"/>
+		<link rel="stylesheet" href="css/photos.css"/>
 
 		<script>
 			document.addEventListener('keydown', function (e) {
@@ -18,7 +19,7 @@
     			if (!currentHash.startsWith('#img')) return;
 
     			// Alle Bild-IDs in der richtigen Reihenfolge
-    			const images = ['#img1', '#img2', '#img3'];
+    			const images = ['#img1', '#img2', '#img3', '#img4', '#img5'];
 
     			let currentIndex = images.indexOf(currentHash);
 
@@ -71,6 +72,9 @@
 				<a href="#img4">
         	        <img id="bild4" src="pictures/bild4.jpg" alt="Beispielbild 4">
         	    </a>
+				<a href="#img5" class="wide">
+        	        <img id="bild5" src="pictures/bild5.jpg" alt="Beispielbild 5">
+        	    </a>
         	</div>
 
 			<!-- End Grid -->
@@ -82,9 +86,9 @@
 
 			<div class="lightbox" id="img1">
 				<a href="#" class="lightbox-bg"></a>
-				<a href="#img3" class="prev">⟨</a>
+				<a href="#img5" class="prev">‹</a>
 				<img src="pictures/bild1.jpg" alt="Beispielbild 1">
-				<a href="#img2" class="next">⟩</a>
+				<a href="#img2" class="next">›</a>
 				<a href="#" class="close">×</a>
 			</div>
         	<div class="lightbox" id="img2">
@@ -96,15 +100,22 @@
         	</div>
         	<div class="lightbox" id="img3">
 				<a href="#" class="lightbox-bg"></a>
-				<a href="#img2" class="prev">⟨</a>
+				<a href="#img2" class="prev">‹</a>
         	    <img src="pictures/bild3.jpg" alt="Beispielbild 3">
-				<a href="#img4" class="next">⟩</a>
+				<a href="#img4" class="next">›</a>
 				<a href="#" class="close">×</a>
         	</div>
 			<div class="lightbox" id="img4">
 				<a href="#" class="lightbox-bg"></a>
 				<a href="#img3" class="prev">‹</a>
         	    <img src="pictures/bild4.jpg" alt="Beispielbild 4">
+				<a href="#img5" class="next">›</a>
+				<a href="#" class="close">×</a>
+        	</div>
+			<div class="lightbox" id="img5">
+				<a href="#" class="lightbox-bg"></a>
+				<a href="#img4" class="prev">‹</a>
+        	    <img src="pictures/bild5.jpg" alt="Beispielbild 5">
 				<a href="#img1" class="next">›</a>
 				<a href="#" class="close">×</a>
         	</div>

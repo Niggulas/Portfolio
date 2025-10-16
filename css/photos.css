@@ -1,0 +1,119 @@
+
+
+
+.container {
+	padding: 20px;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.grid img {
+	width: 100%;
+	border-radius: 10px;
+	transition: transform 0.3s, box-shadow 0.3s;
+	cursor: pointer;
+}
+
+.grid img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.wide {
+	grid-column: span 2;
+}
+
+
+
+
+/* Lightbox */
+
+.lightbox {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.8);
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.lightbox img {
+	max-width: 90%;
+	max-height: 80%;
+	border-radius: 10px;
+}
+
+.lightbox:target {
+	display: flex;
+}
+
+.lightbox-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1; /* Muss unter dem Bild liegen */
+	cursor: default;
+}
+
+.lightbox img,
+.lightbox .prev,
+.lightbox .next,
+.lightbox .close {
+	z-index: 2;
+	position: relative;
+}
+
+.lightbox a.close,
+.lightbox a.prev,
+.lightbox a.next {
+	position: absolute;
+	color: #444;
+	font-size: 3.5em;
+	text-decoration: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	transition: color 0.15s;
+}
+
+.lightbox a.prev:hover,
+.lightbox a.next:hover,
+.lightbox a.close:hover {
+	color: #888;
+}
+
+.lightbox a.close {
+	top: 93%;
+}
+
+.lightbox a.prev {
+	top: 93%;
+	left: 35%;
+}
+
+.lightbox a.next {
+	top: 93%;
+	right: 35%;
+}
+
+
+@media (max-width: 750px) {
+	.wide {
+		grid-column: span 1;
+	}
+}
